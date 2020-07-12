@@ -1,0 +1,82 @@
+\section{Thermalization: The Elastic Case}
+Let us first consider the case of thermalization via  elastic collisions. The characteristic property of elastic collisions is particle number conservation which is directly related to the introduction of a chemical potential $\mu$ as already seen in eqn. (\ref{eqn:BEdist}), representing the assumed equilibrium phase space distribution function.\\
+\noindent
+For a given distribution $f_{\mathrm{eq}}(\mathbf{p})$ the expressions for the energy density and the number density read
+
+\begin{align}
+	\varepsilon_{\mathrm{eq}} =\int_{\mathbf{p}} \omega_{\mathbf{p}}\cdot f_{\mathrm{eq}}(\mathbf{p}),
+\end{align}
+and
+\begin{equation}
+		n_{\mathrm{eq}} = \int_{\mathbf{p}} 	f_{\mathrm{eq}}(\mathbf{p}).
+\end{equation}
+Tuning the temperature $T$ and the chemical potential $\mu$ allows us to reproduce the initial values of $\varepsilon_0$ and $n_0$. \newpage
+\noindent
+Due to complex many-body interactions the gluons acquire a medium-dependent effective mass, i.\,e. $\omega_{\mathbf{p}=0}\neq 0$, which can be obtained for example using the so called \enquote{Hard Thermal Loop approximation} assuming $m\sim \alpha_{\mathrm{s}}^{1/2}T$. In our case this estimation yields
+\begin{equation}
+	m_0^2 \sim \alpha_{\mathrm{s}}\int_{\mathbf{p}}\frac{\dd f_0}{\dd\omega_{\mathbf{p}}} \sim Q_{\mathrm{s}}^2,
+\end{equation}\label{eqn:bose-einstein}
+which can be compared to the equilibrium case 
+\begin{equation}
+	m_{\mathrm{eq}}\sim \alpha_{\mathrm{s}}^{1/2}T \sim \alpha_{\mathrm{s}}^{1/4}Q_{\mathrm{s}}.
+\end{equation}
+This effective mass allows us to set an upper bound on the allowed particle number density by observing that $f_{\mathrm{eq}}(\mathbf{p})$ grows with $\mu$ and demanding that the chemical potential cannot grow larger than the $m$ without changing the sign of $f_{\mathrm{eq}}(\mathbf{p})$. The maximum number density arising from this consideration is given by  
+\begin{equation}
+	n_{\mathrm{max}} = \int\frac{\dd[3]\mathbf{k}}{(2\pi)^3}\frac{1}{\exp\left(\frac{\omega_{\mathbf{k}}-m_0}{T}\right)-1}\sim T^{3}\sim \frac{Q_{\mathrm{s}}^3}{\alpha_{\mathrm{s}}^{3/4}},
+\end{equation}
+where $m\ll T$ is assumed. This shows again, as already discussed previously, that the maximum number density is always smaller than the initial one. If we only consider elastic collisions one possible explanation of this apparent excess of gluons is the formation of a Bose-Einstein condensate (BEC) resulting in a modification of the equilibrium distribution:
+\begin{equation}
+	f_{\mathrm{eq}}(\mathbf{k}) = n_{\mathrm{c}}\cdot\delta(\mathbf{k}) + \frac{1}{\exp\left(\frac{\omega_{\mathbf{k}}-m_0}{T}\right)-1},
+\end{equation}
+where $n_{\mathrm{c}}$ is number density of the condensate with $n_{\mathrm{tot}} = n_{\mathrm{c}} + n_{\mathrm{g}}$. This also implies that most of the gluons are part of the condensate, i.\,e.
+\begin{equation}
+	 n_{\mathrm{c}} \sim  \frac{Q_{\mathrm{s}}^3}{\alpha_{\mathrm{s}}}\left(1-\alpha_{\mathrm{s}}^{1/4}\right)  
+\end{equation}
+but the condensate carries only a small fraction of the total energy density
+\begin{equation}
+	\varepsilon_{\mathrm{c}} = n_{\mathrm{c}}\cdot m \sim \alpha_{\mathrm{s}}^{1/4}T^{\phantom{.}4} \ll \varepsilon_0.
+\end{equation}
+At this point we conclude that the excess of gluons in the case of only particle-number conserving elastic processes can be explained by the formation of a BEC or by the importance of inelastic processes, which is the nowadays favored explanation. We therefore have two possible equilibrium states, one with a condensate only considering elastic collisions and one with fewer gluons in the final state due to mostly $2\rightarrow 1$ inelastic gluon scattering which is a special feature of the non-abelian SU(3) structure of QCD. The latter is a difficult dynamical issue depending on many factors such as production and annihilation rates.\newpage
+\noindent
+Our next goal is to get an estimate for the timescale of the thermalization process. In a first approximation we stick to the case of only elastic collisions driving the system towards equilibrium. This can be understood via the transport equation
+\begin{equation}
+		\partial_t\hspace{0.1em} f\hspace{0.1em}(\mathbf{k},X) = C_{\mathbf{k}}[f],\label{eqn:transport}
+\end{equation}
+which is a simplified version of the Boltzmann equation (introduced in Pavel's talk) omitting the drift term. Here the right hand side is given by the collision integral, which reads 	
+\begin{equation}
+		\eval{\partial_t\hspace{0.1em} f\hspace{0.2em}}_{\mathrm{coll}} \sim \frac{\Lambda_{\mathrm{s}}\Lambda}{p^2}\partial_p\left\{p^2\left[\frac{\partial f}{\partial p} + \frac{\alpha_{\mathrm{s}}}{\Lambda_{\mathrm{s}}}f\hspace{0.1em}(p)(1+f\hspace{0.1em}(p))\right]\right\}\label{eqn:smallangle}
+	\end{equation}
+in the small angle approximation for elastic $2\rightarrow 2$ scattering. The two relevant scales $\Lambda$ and $\Lambda_{\mathrm{s}}$ are assumed to dominate the evolution. To be more explicit, $\Lambda$ is a hard scale above which the Glasma is assumed to be dilute and $\Lambda_{\mathrm{s}}$ is the so called \enquote{coherence scale} meaning $f(p)\sim 1/\alpha_{\mathrm{s}}$ below $\Lambda_{\mathrm{s}}$. In between we have $f(p)\sim \frac{1}{\alpha_{\mathrm{s}}}\frac{\Lambda_{\mathrm{s}}}{\omega_p}$. We want to use the evolution of these scales to derive an expression for the equilibration time $\tau_{\mathrm{eq}}$ based on energy conservation and the fact that after a time $t\sim 1/Q_{\mathrm{s}}$ both scales coincide with $Q_{\mathrm{s}}$ i.\,e. $\Lambda_{\mathrm{s}}/\Lambda\sim\alpha_{\mathrm{s}}$. The Bose-Einstein distribution (\ref{eqn:BEdist}) with temperature $T = \Lambda_{\mathrm{s}}/\alpha_{\mathrm{s}}$ provides a stationary solution to the transport equation (\ref{eqn:smallangle}). By taking moments of the collision integral one finds 
+\begin{equation}
+		t_{\mathrm{scat}} = \frac{\Lambda\phantom{.}}{\Lambda_{\mathrm{s}}^2} \sim t
+\end{equation}
+as an estimate for the timescale of the scattering processes which should not be confused with the equilibration time we want to derive now. For all the following steps we assume the integrals to be dominated by the contribution from the largest momenta $\sim\Lambda$ which allows us to simplify the distribution $f(p)\sim\Lambda_{\mathrm{s}}/(\alpha_{\mathrm{s}}p)$ up to the cutoff $\Lambda$. This gives us the following dependencies for the gluon number density, the gluon energy density and the energy density of the condensate:
+\begin{align}
+		n_{\mathrm{g}} &\sim \frac{1}{\alpha_{\mathrm{s}}}\Lambda^2\Lambda_{\mathrm{s}} \\
+		\varepsilon_{\mathrm{g}} &\sim \frac{1}{\alpha_{\mathrm{s}}}\Lambda^3\Lambda_{\mathrm{s}}\\
+		\varepsilon_{\mathrm{c}} &\sim n_{\mathrm{c}}\cdot m \sim n_{\mathrm{c}}\cdot\sqrt{\Lambda_{\mathrm{s}}\Lambda}.
+	\end{align}
+As mentioned before, additionally we want to assume energy conservation which can be obtained by stating
+\begin{equation}
+	\Lambda_{\mathrm{s}}\Lambda^3 \sim \mathrm{const.}
+\end{equation}
+In total we arrive at the following evolution equations for the coherence scale	
+\begin{align}
+	\Lambda_{\mathrm{s}} \sim  Q_{\mathrm{s}}\left(\frac{t_0}{t}\right)^{\frac{3}{7}},
+\end{align}
+and for the cutoff 
+\begin{equation}
+		\Lambda \sim  Q_{\mathrm{s}}\left(\frac{t}{t_0}\right)^{\frac{1}{7}}.
+\end{equation}
+From those equations it is clearly visible that the gluon number density $n_{\mathrm{g}}$ decreases with time whereas the corresponding energy density remains approximately constant. The energy fraction carried by the gluons in the condensate remains small $\forall t$, i.\,e.
+\begin{equation}
+	\frac{\varepsilon_{\mathrm{c}}}{\varepsilon_{\mathrm{g}}} \sim \left(\frac{t_0}{t}\right)^{\frac{1}{7}} \ll 1.
+\end{equation}
+Now we are able to estimate the thermalization time from the condition $\Lambda_{\mathrm{s}}/\Lambda\sim\alpha_{\mathrm{s}}$ as
+\begin{equation}
+	\tau_{\mathrm{eq}} \sim \frac{1}{Q_{\mathrm{s}}}\left(\frac{1}{\alpha_{\mathrm{s}}}\right)^{\frac{7}{4}}.
+\end{equation}
+In our case the relevant scale, i.\,e. the saturation scale is of the order of $Q_{\mathrm{s}}\simeq 1$ GeV. \\
+
+\noindent 
+A similar analysis for the fermionic quarks leaves us with the observation that $n_{\mathrm{quarks}}\sim \Lambda^3$ which is of the order of $\alpha_{\mathrm{s}}$ smaller than $n_{\mathrm{g}}$ and therefore the quark contribution can be neglected until we reach $\tau_{\mathrm{eq}}$.
